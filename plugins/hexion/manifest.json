@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "hexion",
+  "name": "Hexion (4kHdHub)",
+  "version": "1.0.0",
+  "description": "4kHdHub movie and series streams matched by TMDB id: FSL-v2 and PixelDrain direct links in 4K and 1080p.",
+  "entry": "index.ts",
+  "capabilities": [
+    "vod",
+    "search"
+  ],
+  "contentTypes": [
+    "movie",
+    "series"
+  ],
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "domains": [
+    "4khdhub.one",
+    "*.4khdhub.one",
+    "api.themoviedb.org",
+    "hubcloud.fit",
+    "hubcloud.foo",
+    "hubcloud.lol",
+    "hubcloud.club",
+    "hubdrive.space",
+    "hubdrive.fit",
+    "hubdrive.wales"
+  ],
+  "settingsSchema": [
+    {
+      "key": "mirrorUrl",
+      "label": "Custom Site URL",
+      "type": "text",
+      "placeholder": "https://4khdhub.one"
+    },
+    {
+      "key": "sortBySize",
+      "label": "Sort by Size",
+      "type": "toggle",
+      "default": false,
+      "description": "ON: largest size first. OFF: highest resolution first, then largest size."
+    },
+    {
+      "key": "enable4K",
+      "label": "4K / 2160p",
+      "type": "toggle",
+      "default": true
+    },
+    {
+      "key": "enable1080p",
+      "label": "FHD / 1080p",
+      "type": "toggle",
+      "default": true
+    },
+    {
+      "key": "max4K",
+      "label": "Max 4K / 2160p streams",
+      "type": "select",
+      "default": "unlimited",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        },
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "4",
+          "value": "4"
+        },
+        {
+          "label": "Unlimited",
+          "value": "unlimited"
+        }
+      ]
+    },
+    {
+      "key": "max1080p",
+      "label": "Max FHD / 1080p streams",
+      "type": "select",
+      "default": "unlimited",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        },
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "4",
+          "value": "4"
+        },
+        {
+          "label": "Unlimited",
+          "value": "unlimited"
+        }
+      ]
+    },
+    {
+      "key": "maxFSL",
+      "label": "Max FSL streams",
+      "type": "select",
+      "default": "unlimited",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        },
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "4",
+          "value": "4"
+        },
+        {
+          "label": "Unlimited",
+          "value": "unlimited"
+        }
+      ]
+    },
+    {
+      "key": "maxFSLv2",
+      "label": "Max FSL-v2 [R2] streams",
+      "type": "select",
+      "default": "unlimited",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        },
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "4",
+          "value": "4"
+        },
+        {
+          "label": "Unlimited",
+          "value": "unlimited"
+        }
+      ]
+    },
+    {
+      "key": "maxPixelDrain",
+      "label": "Max PixelDrain streams",
+      "type": "select",
+      "default": "unlimited",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        },
+        {
+          "label": "3",
+          "value": "3"
+        },
+        {
+          "label": "4",
+          "value": "4"
+        },
+        {
+          "label": "Unlimited",
+          "value": "unlimited"
+        }
+      ]
+    }
+  ],
+  "files": [
+    "shared/core/http.ts",
+    "shared/core/plugin-helpers.ts",
+    "shared/core/quality.ts",
+    "shared/core/sources/hexion.ts",
+    "shared/core/text.ts",
+    "shared/core/tmdb.ts"
+  ],
+  "icon": "https://www.google.com/s2/favicons?domain=4khdhub.one&sz=128",
+  "allowAnyHttps": true
+}

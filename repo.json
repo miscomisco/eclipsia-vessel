@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hexion",
+  "name": "Hexion",
+  "description": "4kHdHub streams for Vessel",
+  "iconUrl": "https://www.google.com/s2/favicons?domain=4khdhub.one&sz=128",
+  "pluginLists": [],
+  "plugins": [
+    {
+      "id": "hexion",
+      "name": "Hexion (4kHdHub)",
+      "version": "1.0.0",
+      "description": "4kHdHub movie and series streams matched by TMDB id: FSL-v2 and PixelDrain direct links in 4K and 1080p.",
+      "capabilities": [
+        "vod",
+        "search"
+      ],
+      "contentTypes": [
+        "movie",
+        "series"
+      ],
+      "languages": [
+        "en",
+        "hi"
+      ],
+      "isAdult": false,
+      "iconUrl": "https://www.google.com/s2/favicons?domain=4khdhub.one&sz=128",
+      "sourcePath": "https://raw.githubusercontent.com/falsisdev/anthology-vessel/main/plugins/hexion/manifest.json"
+    }
+  ]
+}
